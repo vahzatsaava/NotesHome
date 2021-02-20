@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NotesHome</string>
+    <string name="day_of_week">День недели</string>
+    <string name="type_the_title_name">Введите текст</string>
+    <string name="type_description_name">Введите описание</string>
+    <string name="priority1">1</string>
+    <string name="priority2">2</string>
+    <string name="priority3">3</string>
+    <string name="priority4">4</string>
+    <string name="button_save_note">Добавить заметку</string>
+    <string-array name="day_ofWeek">
+    <item>Понедельник</item>
+    <item>Вторник</item>
+    <item>Среда</item>
+    <item>Четверг</item>
+    <item>Пятница</item>
+    <item>Суббота</item>
+    <item>Воскресение</item>
+</string-array>
+</resources>
