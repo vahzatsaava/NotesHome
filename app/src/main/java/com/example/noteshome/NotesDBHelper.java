@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class NotesDBHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "notes.db";
-    private static final int DB_VERSION = 7;
+    private static int DB_VERSION = 8;
 
     public NotesDBHelper(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -23,9 +23,9 @@ public class NotesDBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(NotesContract.NotesEntry.DROP_COMMAND);
         onCreate(db);
-
     }
 }
+
 
 
 
