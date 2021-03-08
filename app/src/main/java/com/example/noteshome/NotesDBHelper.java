@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class NotesDBHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "notes.db";
-    private static int DB_VERSION = 8;
+    private static final int DB_VERSION =11;
 
     public NotesDBHelper(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -16,7 +16,8 @@ public class NotesDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(NotesContract.NotesEntry.CREATE_COMMAND);
+        db.execSQL(NotesContract.NotesEntry.COMMAND_CREATE);
+
     }
 
     @Override
@@ -25,6 +26,7 @@ public class NotesDBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 }
+
 
 
 
